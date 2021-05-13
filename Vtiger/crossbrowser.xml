@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test1">
+  <parameter name="browser" value="chromeBrowser"></parameter>
+    <classes>
+      <class name="TestScript.TC_1Test"/>
+      <class name="TestScript.TC_2Test"/>
+      <class name="TestScript.TC_7Test"/>
+      <class name="TestScript.TC_6Test"/>
+      <class name="TestScript.TC_4Test"/>
+    </classes>
+  </test> <!-- Test -->
+   <test thread-count="5" name="Test2">
+     <parameter name="browser" value="firefoxBrowser"></parameter>
+    <classes>
+      <class name="TestScript.TC_1Test"/>
+      <class name="TestScript.TC_2Test"/>
+      <class name="TestScript.TC_7Test"/>
+      <class name="TestScript.TC_6Test"/>
+      <class name="TestScript.TC_4Test"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
